@@ -17,21 +17,14 @@
         <!--
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
         -->
-
       </div>
     </header>
 
-    <div class="container">
-        <!--<section id="main_content">-->
+    {% include menu.html %}
 
-        <div id="menu">
-            <a href="notes.html">notes</a>
-        </div>
-
-        <div id="main"
-        {{ content }}
-        <!--</section>-->
-        </div>
+    <div id="main">
+    {{ content }}
+    </div>
 
   </body>
 </html>
