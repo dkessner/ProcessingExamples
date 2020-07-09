@@ -66,10 +66,12 @@ header h1 {
   -webkit-font-smoothing: antialiased;
 }
 
+/* dk removed (?!)
 header h1:before {
   content: "./ ";
   font-size: 24px;
 }
+*/
 
 header h2 {
   font-size: 18px;
@@ -251,4 +253,80 @@ a {
 .cf {
   zoom:1;
 }
+
+
+/* dk */
+
+#main {
+    float: left; 
+    margin: 1%;
+    padding: 1.5%;
+    width: 60%;
+}
+
+
+#menu {
+    float: left; 
+    margin: 1%;
+    padding: 1.5%;
+    width: 25%;
+    min-width: 250px;
+    background-color: #aaa;
+    border-style: solid;
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: bold;
+}
+
+
+#menu h1 {
+    font-size: 1.7em;
+    text-align: center;
+}
+
+
+#menu h2 {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+
+#menu li {
+    margin-left: -20px;
+    list-style-type: none;
+    font-weight: normal;
+}
+
+
+#menu a:link, #menu a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: blue;
+}
+
+
+#menu p {
+    text-align: center;
+}
+
+
+#menu img {
+    /* center the image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+
+#menu email {
+    display: block;
+    font-size: .8em;
+    text-align: center;
+}
+
+
+
+
 
