@@ -2,5 +2,5 @@
 
 A simple bouncing ball program.
 
-{% include embed_sketch.html sources="bouncing_ball.pde" %}
+{% include embed_sketch_and_code.html sources="bouncing_ball.pde" %}
 

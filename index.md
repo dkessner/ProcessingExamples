@@ -1,19 +1,12 @@
-# Welcome
+# Welcome new coders!
 
-## Section 1
 
-My favorite things
-* computers
-* math
-* juggling
+{% include embed_sketch.html sources="phyllotaxis/phyllotaxis.pde" %}
 
-## Section 2
+We use this collection of Processing examples in our coding classes at
+Marlborough School in Los Angeles, California.
 
-The quick brown fox jumps over the lazy dog.
-The quick brown fox jumps over the lazy dog.
-The quick brown fox jumps over the lazy dog.
-The quick brown fox jumps over the lazy dog.
-The quick brown fox jumps over the lazy dog.
-The quick brown fox jumps over the lazy dog.
+Have fun!
+
 
 
