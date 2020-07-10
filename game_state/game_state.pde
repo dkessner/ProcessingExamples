@@ -3,25 +3,38 @@
 //
 
 int gameState = 0;
+int x = 100;
+int y = 100;
 
 void setup()
 {
   size(400, 400); 
+  textAlign(CENTER);
 }
 
 void drawStart()
 {
-  text("This is an awesome game", 100, 200);  
+  text("Awesome Video Game", 200, 200);  
+  text("Click to continue", 200, 300);  
 }
 
 void drawGame()
 {
-  ellipse(200, 200, 100, 100);
+  fill(255);
+  text("Use arrow keys to move", 200, 25);
+  rect(300, 300, 100, 100);
+  fill(0);
+  text("Goal", 350, 350);
+
+  fill(0, 255, 0);
+  ellipse(x, y, 100, 100);
 }
 
 void drawEnd()
 {
-  text("GAME OVER", 100, 200);
+  fill(255);
+  text("GAME OVER", 200, 200);
+  text("Click to play again!", 200, 300);  
 }
 
 void draw()
@@ -38,9 +51,29 @@ void draw()
 
 void mousePressed()
 {
-  gameState++;
-  
-  if (gameState > 2)
+  if (gameState == 0)
+    gameState = 1;
+  else if (gameState == 2)
+  {
     gameState = 0;
+    x = 100;
+    y = 100;
+  }
 }
+
+void keyPressed()
+{
+  if (keyCode == RIGHT)
+    x += 25;
+  else if (keyCode == LEFT)
+    x -= 25;
+  else if (keyCode == DOWN)
+    y += 25;
+  else if (keyCode == UP)
+    y -= 25;
+
+  if (dist(x, y, 350, 350) < 50)
+    gameState = 2;
+}
+
 
