@@ -1,11 +1,6 @@
+# Bouncing Ball
 
-<canvas data-processing-sources="bouncing_ball.pde" 
-    style="display:block; margin-left:auto; margin-right:auto;"></canvas>
+A simple bouncing ball program.
 
-
-```java
-{% include_relative bouncing_ball.pde %}
-```
-
-<a href="bouncing_ball.pde" download>Download source</a>
+{% include embed_sketch.html sources="bouncing_ball.pde" %}
 
