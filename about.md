@@ -17,6 +17,10 @@ which GitHub converts to HTML with the static site generator
 hacker theme](https://github.com/pages-themes/hacker).  The Processing sketches
 are embedded in the pages with [ProcessingJS](http://processingjs.org/).
 
+You can copy or download the code on each example page.  Or you could 
+[clone this whole site](https://github.com/dkessner/ProcessingExamples).
+
+
 
 ## Contact
 
