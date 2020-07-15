@@ -17,9 +17,9 @@
 2. Pull changes to your local repo. (`git pull`).
 
 2. Copy your entire sketch folder to the ProcessingExamples directory, and
-   verify that the sketch runs.  Add the folder to your local repo (`git add`).
+   verify that the sketch runs.
 
-3. Add a file `index.md` to the sketch folder:
+3. Create a file `index.md` in the sketch folder:
 
     ```
     # Sketch Name
@@ -31,7 +31,8 @@
 
 4. Add an entry to the menu in [`_includes/menu.html`](https://github.com/dkessner/ProcessingExamples/blob/master/_includes/menu.html).
 
-5. Commit and push your changes. (`git commit/push`).
+5. Add the new sketch folder to your local repo, commit and push your changes.
+   (`git add/commit/push`).
 
 
 ## Local testing
