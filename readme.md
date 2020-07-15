@@ -14,6 +14,8 @@
     git clone git@github.com:dkessner/ProcessingExamples.git
     ```
 
+2. Pull changes to your local repo. (`git pull`)
+
 2. Copy your entire sketch folder to the ProcessingExamples directory, and
    verify that the sketch runs.
 
@@ -28,6 +30,8 @@
     ```
 
 4. Add an entry to the menu in [`_includes/menu.html`](https://github.com/dkessner/ProcessingExamples/blob/master/_includes/menu.html)
+
+5. Commit and push your changes. (`git commit/push`)
 
 
 ## Local testing
