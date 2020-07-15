@@ -17,7 +17,7 @@
 2. Pull changes to your local repo. (`git pull`).
 
 2. Copy your entire sketch folder to the ProcessingExamples directory, and
-   verify that the sketch runs.  Add the folder to your local rep (`git add`).
+   verify that the sketch runs.  Add the folder to your local repo (`git add`).
 
 3. Add a file `index.md` to the sketch folder:
 
