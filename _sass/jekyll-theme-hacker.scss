@@ -66,6 +66,11 @@ header h1 {
   -webkit-font-smoothing: antialiased;
 }
 
+header h1 a {
+  color: $conifer;//$header;
+  text-decoration: none;
+}
+
 /* dk removed (?!)
 header h1:before {
   content: "./ ";
