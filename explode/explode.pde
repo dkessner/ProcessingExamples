@@ -3,7 +3,8 @@
 //
 
 
-PImage[] explosion = new PImage[17];
+int explosionCount = 17;
+PImage[] explosion = new PImage[explosionCount];
 
 boolean exploding = false;
 int explosionIndex = 0;
@@ -14,7 +15,7 @@ void setup()
     size(400, 400);
     imageMode(CENTER);
 
-    for (int i=0; i<explosion.length; i++)
+    for (int i=0; i<explosionCount; i++)
         explosion[i] = loadImage("data/explode" + i + ".png");
 }
 

@@ -17,6 +17,7 @@ void setup(){
 
 void draw(){
   background(0);
+  fill(255);
   
   //if the interval has passed, reset the timer and change display
   if(millis() > timer+interval){

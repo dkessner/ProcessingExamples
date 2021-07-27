@@ -7,10 +7,18 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
 {% seo %}
+
+        <script src="{{ site.url }}//js/p5.min.js"></script>
+        <script src="{{ site.url }}//js/processing-p5-convert-bundle.js"></script>
+        <script src="{{ site.url }}//js/processing-p5-convert-bootstrap.js"></script>
+
   </head>
 
   <body>
+      <!--
     <script src="{{ site.url }}/processing.min.js"></script>
+    -->
+
 
     <header>
         <!--<div class="container"> -->
@@ -27,5 +35,15 @@
     {{ content }}
     </div>
 
+    <!-- suppress key event handling -->
+    <script>
+    window.addEventListener("keydown", function(e) {
+        if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight", "Tab"].indexOf(e.code) > -1) {
+            e.preventDefault();
+        }
+    }, false);
+    </script>
+
   </body>
+
 </html>

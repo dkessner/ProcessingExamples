@@ -14,6 +14,7 @@ void setup()
 
 void drawStart()
 {
+  fill(255);
   text("Awesome Video Game", 200, 200);  
   text("Click to continue", 200, 300);  
 }

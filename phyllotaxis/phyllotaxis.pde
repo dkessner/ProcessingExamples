@@ -21,7 +21,7 @@ int currentColor = 0;
 
 // 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89
 
-float tau = (1 + sqrt(5))/2;
+float tau = (float)(1 + Math.sqrt(5))/2;
 float golden_angle_proportion = 1/tau/tau; // fraction of circle
 
 float ratio = golden_angle_proportion;
@@ -54,7 +54,7 @@ void draw()
 {
     background(0);
 
-    currentColor = hue((frameCount % colorPeriod)/(float)colorPeriod);
+    currentColor = myhue((frameCount % colorPeriod)/(float)colorPeriod);
 
     //text(balls.size(), 50, 50);
     
@@ -100,14 +100,14 @@ class Ball
     boolean alive;
     final int diameter = 6;
 
-    Ball(float x, float y, float vx, float vy, int c)
+    Ball(float xIn, float yIn, float vxIn, float vyIn, int cIn)
     {
-        this.x = x;
-        this.y = y;
-        this.vx = vx;
-        this.vy = vy;
-        this.c = c;
-        this.alive = true;
+        x = xIn;
+        y = yIn;
+        vx = vxIn; 
+        vy = vyIn;
+        c = cIn;
+        alive = true;
     }
 
     void display()
@@ -125,7 +125,7 @@ class Ball
 
 
 // translates x in [0,1] to a rainbow color
-int hue(float x)
+int myhue(float x)
 {
     float t = 3*x - (int)(3*x);
     if (x < 1./3)
