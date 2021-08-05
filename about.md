@@ -10,12 +10,14 @@ learn in Processing is actually Java syntax, and as you learn to code, most
 languages in the C/C++ family (of which Java is a member) will start to look
 familiar to you.
 
-This site uses [GitHub Pages](https://pages.github.com/).  The pages are
-written in [Markdown](https://daringfireball.net/projects/markdown/syntax)
+This site is hosted on [GitHub Pages](https://pages.github.com/).  The pages
+are written in [Markdown](https://daringfireball.net/projects/markdown/syntax)
 which GitHub converts to HTML with the static site generator
 [Jekyll](https://jekyllrb.com/).  The style sheets are based on the [Jekyll
 hacker theme](https://github.com/pages-themes/hacker).  The Processing sketches
-are embedded in the pages with [ProcessingJS](http://processingjs.org/).
+are converted to Javascript with
+[processing-p5-convert](https://dkessner.github.io/processing-p5-convert/) and
+are running as [p5.js](https://p5js.org/) sketches.
 
 You can copy or download the code on each example page.  And here is the
 [source code](https://github.com/dkessner/ProcessingExamples) on GitHub.
